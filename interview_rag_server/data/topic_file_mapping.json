@@ -1,0 +1,17 @@
+{
+  "mappings": [
+    {"topic": "llm", "files": ["hello-agents/docs/chapter3/第三章 大语言模型基础.md"], "content_type": "theory"},
+    {"topic": "agent", "files": ["hello-agents/docs/chapter1/第一章 初识智能体.md", "hello-agents/docs/chapter4/第四章 智能体经典范式构建.md", "hello-agents/docs/chapter7/第七章 构建你的Agent框架.md"], "content_type": "theory"},
+    {"topic": "agent", "files": ["Photo-agents/core/loop.py", "Photo-agents/core/handler.py"], "content_type": "code"},
+    {"topic": "agent", "files": ["Photo-agents/skills/plan_sop.md", "Photo-agents/skills/supervisor_sop.md"], "content_type": "theory"},
+    {"topic": "rag", "files": ["hello-agents/docs/chapter8/第八章 记忆与检索.md"], "content_type": "theory"},
+    {"topic": "memory", "files": ["Photo-agents/skills/memory_management_sop.md", "Photo-agents/skills/session_archive.py"], "content_type": "code"},
+    {"topic": "multi-agent", "files": ["hello-agents/docs/chapter15/第十五章 构建赛博小镇.md"], "content_type": "theory"},
+    {"topic": "multi-agent", "files": ["Photo-agents/skills/subagent.md"], "content_type": "theory"},
+    {"topic": "evaluation", "files": ["hello-agents/docs/chapter12/第十二章 智能体性能评估.md"], "content_type": "theory"},
+    {"topic": "rlhf", "files": ["hello-agents/docs/chapter11/第十一章 Agentic-RL.md"], "content_type": "theory"},
+    {"topic": "vlm", "files": ["Photo-agents/skills/vision_sop.md", "Photo-agents/skills/ocr_utils.py"], "content_type": "code"},
+    {"topic": "engineering", "files": ["hello-agents/docs/chapter9/第九章 上下文工程.md", "hello-agents/docs/chapter10/第十章 智能体通信协议.md"], "content_type": "theory"},
+    {"topic": "engineering", "files": ["Photo-agents/integrations/langfuse_tracing.py"], "content_type": "code"}
+  ]
+}
