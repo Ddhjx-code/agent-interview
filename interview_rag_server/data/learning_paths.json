@@ -1,0 +1,95 @@
+{
+  "paths": {
+    "llm": {
+      "display_name": "LLM 基础",
+      "resources": [
+        {"type": "chapter", "ref": "hello-agents 第三章", "title": "大语言模型基础"},
+        {"type": "practice", "ref": "hello-agents Extra01 第1节", "title": "LLM面试题练习"},
+        {"type": "code", "ref": "Photo-agents llm/router.py", "title": "多LLM路由实现参考"}
+      ],
+      "key_concepts": ["Transformer架构", "位置编码(RoPE)", "注意力变体(MHA/GQA)", "Scaling Laws", "MoE"],
+      "priority_weight": 3
+    },
+    "agent": {
+      "display_name": "Agent 架构",
+      "resources": [
+        {"type": "chapter", "ref": "hello-agents 第一章", "title": "初识智能体"},
+        {"type": "chapter", "ref": "hello-agents 第四章", "title": "智能体经典范式构建"},
+        {"type": "chapter", "ref": "hello-agents 第七章", "title": "构建你的Agent框架"},
+        {"type": "code", "ref": "Photo-agents core/loop.py", "title": "Agent循环实现"},
+        {"type": "practice", "ref": "hello-agents Extra01 第4节", "title": "Agent面试题练习"}
+      ],
+      "key_concepts": ["ReAct", "Plan-and-Solve", "Tool Use", "Agent Loop", "自进化"],
+      "priority_weight": 5
+    },
+    "rag": {
+      "display_name": "RAG 技术",
+      "resources": [
+        {"type": "chapter", "ref": "hello-agents 第八章(RAG部分)", "title": "检索增强生成"},
+        {"type": "code", "ref": "Photo-agents skills/sops/skill_search/", "title": "语义搜索实现"},
+        {"type": "practice", "ref": "hello-agents Extra01 第5节", "title": "RAG面试题练习"}
+      ],
+      "key_concepts": ["向量检索", "文本切块", "混合检索", "重排序", "评估指标"],
+      "priority_weight": 4
+    },
+    "memory": {
+      "display_name": "记忆系统",
+      "resources": [
+        {"type": "chapter", "ref": "hello-agents 第八章(记忆部分)", "title": "记忆与检索"},
+        {"type": "code", "ref": "Photo-agents resources/global_mem*", "title": "分层记忆实现"},
+        {"type": "chapter", "ref": "hello-agents 第九章", "title": "上下文工程"}
+      ],
+      "key_concepts": ["工作记忆", "长期记忆", "记忆压缩", "重要性评分", "上下文管理"],
+      "priority_weight": 3
+    },
+    "multi-agent": {
+      "display_name": "多智能体",
+      "resources": [
+        {"type": "chapter", "ref": "hello-agents 第十五章", "title": "构建赛博小镇"},
+        {"type": "chapter", "ref": "hello-agents 第六章", "title": "框架开发实践"},
+        {"type": "code", "ref": "Photo-agents skills/subagent.md", "title": "子Agent设计"}
+      ],
+      "key_concepts": ["任务分解", "通信协议", "协调机制", "涌现行为"],
+      "priority_weight": 2
+    },
+    "rlhf": {
+      "display_name": "RLHF/对齐",
+      "resources": [
+        {"type": "chapter", "ref": "hello-agents 第十一章", "title": "Agentic-RL"},
+        {"type": "practice", "ref": "hello-agents Extra01 第3节", "title": "RLHF面试题练习"},
+        {"type": "extra", "ref": "hello-agents Extra12", "title": "旅行助手后训练实战"}
+      ],
+      "key_concepts": ["PPO", "DPO", "GRPO", "奖励模型", "KL散度约束"],
+      "priority_weight": 2
+    },
+    "vlm": {
+      "display_name": "视觉语言模型",
+      "resources": [
+        {"type": "practice", "ref": "hello-agents Extra01 第2节", "title": "VLM面试题练习"},
+        {"type": "code", "ref": "Photo-agents skills/vision_sop.md", "title": "视觉Agent SOP"}
+      ],
+      "key_concepts": ["跨模态对齐", "CLIP", "视觉编码器", "指令微调"],
+      "priority_weight": 2
+    },
+    "evaluation": {
+      "display_name": "智能体评估",
+      "resources": [
+        {"type": "chapter", "ref": "hello-agents 第十二章", "title": "智能体性能评估"},
+        {"type": "practice", "ref": "hello-agents Extra01 第6节", "title": "评估面试题练习"}
+      ],
+      "key_concepts": ["基准测试", "过程指标", "LLM-as-Judge", "红队测试"],
+      "priority_weight": 2
+    },
+    "engineering": {
+      "display_name": "工程实践",
+      "resources": [
+        {"type": "chapter", "ref": "hello-agents 第十章", "title": "智能体通信协议"},
+        {"type": "extra", "ref": "hello-agents Extra09", "title": "Agent应用开发踩坑与经验"},
+        {"type": "extra", "ref": "hello-agents Extra08", "title": "如何写出好的Skill"},
+        {"type": "code", "ref": "Photo-agents 完整项目", "title": "生产级Agent工程参考"}
+      ],
+      "key_concepts": ["MCP协议", "可观测性", "错误恢复", "Skill设计", "部署"],
+      "priority_weight": 3
+    }
+  }
+}
