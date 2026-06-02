@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {"id": "llm_01", "topic": "llm", "difficulty": "easy", "question": "请详细解释一下 Transformer 模型中的自注意力机制是如何工作的？", "key_points": ["Q/K/V矩阵", "缩放点积", "Softmax归一化", "并行计算优势"], "source": "hello-agents/Extra01", "follow_ups": ["为什么比RNN更适合处理长序列？"]},
+    {"id": "llm_02", "topic": "llm", "difficulty": "easy", "question": "什么是位置编码？在 Transformer 中为什么它是必需的？", "key_points": ["置换不变性", "正弦余弦编码", "可学习编码", "RoPE"], "source": "hello-agents/Extra01", "follow_ups": ["请详细介绍RoPE"]},
+    {"id": "llm_03", "topic": "llm", "difficulty": "medium", "question": "请比较 MHA、MQA、GQA 的区别，以及各自的适用场景。", "key_points": ["注意力头数量", "KV共享策略", "推理效率", "模型质量权衡"], "source": "hello-agents/Extra01", "follow_ups": ["GQA在哪些模型中被使用？"]},
+    {"id": "llm_04", "topic": "llm", "difficulty": "medium", "question": "什么是Scaling Laws？它揭示了模型性能、计算量和数据量之间的什么关系？", "key_points": ["幂律关系", "Chinchilla最优", "计算预算分配"], "source": "hello-agents/Extra01", "follow_ups": ["这对LLM研发有什么指导意义？"]},
+    {"id": "llm_05", "topic": "llm", "difficulty": "hard", "question": "混合专家模型（MoE）是如何在不显著增加推理成本的情况下扩大模型参数规模的？", "key_points": ["稀疏激活", "门控网络", "专家路由", "负载均衡"], "source": "hello-agents/Extra01", "follow_ups": ["MoE训练中的负载均衡问题如何解决？"]},
+    {"id": "agent_01", "topic": "agent", "difficulty": "easy", "question": "你如何定义一个基于 LLM 的智能体？它通常由哪些核心组件构成？", "key_points": ["感知/推理/行动循环", "规划", "记忆", "工具使用"], "source": "hello-agents/Ch1+Extra01", "follow_ups": ["这些组件之间如何协作？"]},
+    {"id": "agent_02", "topic": "agent", "difficulty": "medium", "question": "请详细解释 ReAct 框架，它是如何将思维链和行动结合来完成复杂任务的？", "key_points": ["Thought-Action-Observation循环", "交替推理和行动", "与CoT的区别", "错误恢复"], "source": "hello-agents/Ch4+Extra01", "follow_ups": ["ReAct和Plan-and-Solve有什么区别？"]},
+    {"id": "agent_03", "topic": "agent", "difficulty": "medium", "question": "描述一个Agent循环的设计模式：perceive→reason→act，它的核心数据流是什么？", "key_points": ["工具分发", "StepOutcome数据流", "turn管理", "handler继承"], "source": "Photo-agents/core/loop.py", "follow_ups": ["如何处理工具调用失败？"]},
+    {"id": "agent_04", "topic": "agent", "difficulty": "hard", "question": "什么是多智能体系统？多个 Agent 协同工作相比单个 Agent 有什么优势和复杂性？", "key_points": ["任务分解", "通信协议", "协调机制", "一致性保证"], "source": "hello-agents/Ch15+Extra01", "follow_ups": ["了解A2A框架吗？"]},
+    {"id": "agent_05", "topic": "agent", "difficulty": "hard", "question": "Agent的自进化能力如何实现？请结合具体架构说明。", "key_points": ["反射机制", "技能学习", "经验回放", "自主调度"], "source": "Photo-agents/evolution+hello-agents/Extra10", "follow_ups": ["自进化的四类闭环是什么？"]},
+    {"id": "rag_01", "topic": "rag", "difficulty": "easy", "question": "请解释 RAG 的工作原理。与直接微调 LLM 相比，RAG 主要解决了什么问题？", "key_points": ["检索增强生成", "知识时效性", "幻觉减少", "可解释性"], "source": "hello-agents/Ch8+Extra01", "follow_ups": ["RAG的局限性是什么？"]},
+    {"id": "rag_02", "topic": "rag", "difficulty": "medium", "question": "一个完整的 RAG 流水线包含哪些关键步骤？请从数据准备到最终生成详细描述。", "key_points": ["文档加载", "切块策略", "向量化", "索引构建", "检索", "重排", "生成"], "source": "hello-agents/Ch8+Extra01", "follow_ups": ["文本切块策略如何选择？"]},
+    {"id": "rag_03", "topic": "rag", "difficulty": "hard", "question": "除了基础向量检索，你还知道哪些提升 RAG 检索质量的高级技术？", "key_points": ["混合检索", "查询重写", "HyDE", "多跳检索", "重排序模型"], "source": "hello-agents/Ch8+Extra01", "follow_ups": ["解释Lost in the Middle问题"]},
+    {"id": "memory_01", "topic": "memory", "difficulty": "medium", "question": "如何为 Agent 设计短期记忆和长期记忆系统？可以借助哪些技术？", "key_points": ["工作记忆vs长期记忆", "向量存储", "摘要压缩", "重要性评分"], "source": "hello-agents/Ch8", "follow_ups": ["分层记忆系统是如何设计的？"]},
+    {"id": "rlhf_01", "topic": "rlhf", "difficulty": "medium", "question": "请详细阐述经典RLHF流程的三个核心阶段。", "key_points": ["SFT阶段", "奖励模型训练", "PPO优化", "KL散度约束"], "source": "hello-agents/Ch11+Extra01", "follow_ups": ["DPO与RLHF的区别？"]},
+    {"id": "rlhf_02", "topic": "rlhf", "difficulty": "hard", "question": "Deepseek的GRPO和PPO的主要区别是什么？", "key_points": ["组相对策略优化", "无需价值网络", "采样效率", "训练稳定性"], "source": "hello-agents/Ch11+Extra01", "follow_ups": ["GSPO和DAPO了解吗？"]},
+    {"id": "vlm_01", "topic": "vlm", "difficulty": "medium", "question": "多模态大模型的核心挑战是什么？如何实现视觉和语言的有效对齐？", "key_points": ["跨模态对齐", "视觉编码器选择", "投影层设计", "训练策略"], "source": "hello-agents/Extra01", "follow_ups": ["CLIP的工作原理？"]},
+    {"id": "evaluation_01", "topic": "evaluation", "difficulty": "medium", "question": "评估一个 Agent 为什么比评估基础 LLM 更困难？评估维度有哪些不同？", "key_points": ["过程vs结果", "多步骤不确定性", "环境交互", "效率和成本"], "source": "hello-agents/Ch12+Extra01", "follow_ups": ["有哪些Agent评估基准测试？"]},
+    {"id": "engineering_01", "topic": "engineering", "difficulty": "medium", "question": "MCP、A2A、ANP 这些智能体通信协议有什么区别？各自适用什么场景？", "key_points": ["MCP工具调用", "A2A Agent间通信", "ANP网络协议", "协议层次"], "source": "hello-agents/Ch10", "follow_ups": ["MCP和Function Calling的关系？"]},
+    {"id": "engineering_02", "topic": "engineering", "difficulty": "hard", "question": "在构建生产级Agent系统时，你认为最主要的挑战是什么？如何解决？", "key_points": ["可靠性", "可观测性", "成本控制", "错误恢复", "安全性"], "source": "hello-agents/Extra09+Photo-agents", "follow_ups": ["如何做Agent的可观测性？"]}
+  ]
+}
