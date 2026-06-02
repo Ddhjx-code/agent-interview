@@ -3,7 +3,7 @@
     "interview-rag": {
       "command": "python",
       "args": ["-m", "interview_rag_server.server"],
-      "cwd": "/Users/duanchao.wzj/AI/workspace/agent_study",
+      "cwd": "/Users/duanchao.wzj/AI/workspace/agent-interview",
       "env": {
         "EMBEDDING_MODEL": "BAAI/bge-base-zh-v1.5",
         "HF_HUB_OFFLINE": "1"
