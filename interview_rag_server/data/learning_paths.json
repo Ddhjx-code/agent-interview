@@ -5,7 +5,7 @@
       "resources": [
         {"type": "chapter", "ref": "hello-agents 第三章", "title": "大语言模型基础"},
         {"type": "practice", "ref": "hello-agents Extra01 第1节", "title": "LLM面试题练习"},
-        {"type": "code", "ref": "Photo-agents llm/router.py", "title": "多LLM路由实现参考"}
+        {"type": "roadmap", "ref": "Agent-Learning-Hub Stage 1", "title": "构建最小Agent Loop（含LLM API调用）"}
       ],
       "key_concepts": ["Transformer架构", "位置编码(RoPE)", "注意力变体(MHA/GQA)", "Scaling Laws", "MoE"],
       "priority_weight": 3
@@ -16,18 +16,22 @@
         {"type": "chapter", "ref": "hello-agents 第一章", "title": "初识智能体"},
         {"type": "chapter", "ref": "hello-agents 第四章", "title": "智能体经典范式构建"},
         {"type": "chapter", "ref": "hello-agents 第七章", "title": "构建你的Agent框架"},
-        {"type": "code", "ref": "Photo-agents core/loop.py", "title": "Agent循环实现"},
-        {"type": "practice", "ref": "hello-agents Extra01 第4节", "title": "Agent面试题练习"}
+        {"type": "practice", "ref": "hello-agents Extra01 第4节", "title": "Agent面试题练习"},
+        {"type": "roadmap", "ref": "Agent-Learning-Hub Stage 0-1", "title": "理解Agent定义与构建最小Agent Loop"},
+        {"type": "blog", "ref": "Anthropic: Building Effective Agents", "title": "Agent设计入门必读"},
+        {"type": "paper", "ref": "ReAct (arxiv 2210.03629)", "title": "Reasoning+Acting基础范式"}
       ],
-      "key_concepts": ["ReAct", "Plan-and-Solve", "Tool Use", "Agent Loop", "自进化"],
+      "key_concepts": ["ReAct", "Plan-and-Solve", "Tool Use", "Agent Loop", "observe-think-act循环"],
       "priority_weight": 5
     },
     "rag": {
       "display_name": "RAG 技术",
       "resources": [
         {"type": "chapter", "ref": "hello-agents 第八章(RAG部分)", "title": "检索增强生成"},
-        {"type": "code", "ref": "Photo-agents skills/sops/skill_search/", "title": "语义搜索实现"},
-        {"type": "practice", "ref": "hello-agents Extra01 第5节", "title": "RAG面试题练习"}
+        {"type": "practice", "ref": "hello-agents Extra01 第5节", "title": "RAG面试题练习"},
+        {"type": "roadmap", "ref": "Agent-Learning-Hub Stage 2", "title": "学习Tool Use、RAG和Memory"},
+        {"type": "project", "ref": "GPT Researcher", "title": "资料研究助手成品参考"},
+        {"type": "project", "ref": "RAGFlow", "title": "文档理解型RAG引擎参考"}
       ],
       "key_concepts": ["向量检索", "文本切块", "混合检索", "重排序", "评估指标"],
       "priority_weight": 4
@@ -36,8 +40,10 @@
       "display_name": "记忆系统",
       "resources": [
         {"type": "chapter", "ref": "hello-agents 第八章(记忆部分)", "title": "记忆与检索"},
-        {"type": "code", "ref": "Photo-agents resources/global_mem*", "title": "分层记忆实现"},
-        {"type": "chapter", "ref": "hello-agents 第九章", "title": "上下文工程"}
+        {"type": "chapter", "ref": "hello-agents 第九章", "title": "上下文工程"},
+        {"type": "roadmap", "ref": "Agent-Learning-Hub Stage 2", "title": "区分短期上下文、会话记忆、长期记忆"},
+        {"type": "project", "ref": "mem0", "title": "Agent记忆层组件"},
+        {"type": "project", "ref": "Letta", "title": "Stateful Agent记忆/上下文平台"}
       ],
       "key_concepts": ["工作记忆", "长期记忆", "记忆压缩", "重要性评分", "上下文管理"],
       "priority_weight": 3
@@ -47,9 +53,11 @@
       "resources": [
         {"type": "chapter", "ref": "hello-agents 第十五章", "title": "构建赛博小镇"},
         {"type": "chapter", "ref": "hello-agents 第六章", "title": "框架开发实践"},
-        {"type": "code", "ref": "Photo-agents skills/subagent.md", "title": "子Agent设计"}
+        {"type": "roadmap", "ref": "Agent-Learning-Hub Stage 4", "title": "多Agent协调（非魔法）"},
+        {"type": "blog", "ref": "Claude Code Subagents", "title": "任务拆分与子代理设计"},
+        {"type": "paper", "ref": "Generative Agents (arxiv 2304.03442)", "title": "记忆反思规划驱动的模拟Agent"}
       ],
-      "key_concepts": ["任务分解", "通信协议", "协调机制", "涌现行为"],
+      "key_concepts": ["任务分解", "通信协议", "协调机制", "涌现行为", "supervisor/graph管理"],
       "priority_weight": 2
     },
     "rlhf": {
@@ -66,7 +74,7 @@
       "display_name": "视觉语言模型",
       "resources": [
         {"type": "practice", "ref": "hello-agents Extra01 第2节", "title": "VLM面试题练习"},
-        {"type": "code", "ref": "Photo-agents skills/vision_sop.md", "title": "视觉Agent SOP"}
+        {"type": "roadmap", "ref": "Agent-Learning-Hub Stage 6", "title": "Browser和Computer-Use Agent"}
       ],
       "key_concepts": ["跨模态对齐", "CLIP", "视觉编码器", "指令微调"],
       "priority_weight": 2
@@ -75,9 +83,12 @@
       "display_name": "智能体评估",
       "resources": [
         {"type": "chapter", "ref": "hello-agents 第十二章", "title": "智能体性能评估"},
-        {"type": "practice", "ref": "hello-agents Extra01 第6节", "title": "评估面试题练习"}
+        {"type": "practice", "ref": "hello-agents Extra01 第6节", "title": "评估面试题练习"},
+        {"type": "roadmap", "ref": "Agent-Learning-Hub Stage 7", "title": "评估、可观测性和安全"},
+        {"type": "paper", "ref": "AgentBench (arxiv 2308.03688)", "title": "Agent能力评测基准"},
+        {"type": "paper", "ref": "SWE-bench (arxiv 2310.06770)", "title": "真实GitHub Issue修复评测"}
       ],
-      "key_concepts": ["基准测试", "过程指标", "LLM-as-Judge", "红队测试"],
+      "key_concepts": ["基准测试", "过程指标", "LLM-as-Judge", "红队测试", "trace分析"],
       "priority_weight": 2
     },
     "engineering": {
@@ -86,9 +97,13 @@
         {"type": "chapter", "ref": "hello-agents 第十章", "title": "智能体通信协议"},
         {"type": "extra", "ref": "hello-agents Extra09", "title": "Agent应用开发踩坑与经验"},
         {"type": "extra", "ref": "hello-agents Extra08", "title": "如何写出好的Skill"},
-        {"type": "code", "ref": "Photo-agents 完整项目", "title": "生产级Agent工程参考"}
+        {"type": "roadmap", "ref": "Agent-Learning-Hub Stage 3", "title": "深入研究一个现代Agent Harness"},
+        {"type": "roadmap", "ref": "Agent-Learning-Hub Stage 5", "title": "学习Skills、协议和能力打包"},
+        {"type": "blog", "ref": "Claude Code Docs", "title": "Coding Agent产品文档"},
+        {"type": "project", "ref": "learn-claude-code", "title": "从零复刻Claude Code-like Agent"},
+        {"type": "paper", "ref": "AI Harness Engineering (arxiv 2605.13357)", "title": "Harness作为Agent能力来源"}
       ],
-      "key_concepts": ["MCP协议", "可观测性", "错误恢复", "Skill设计", "部署"],
+      "key_concepts": ["MCP协议", "A2A协议", "Skill设计", "Agent Harness", "可观测性", "错误恢复", "部署"],
       "priority_weight": 3
     }
   }

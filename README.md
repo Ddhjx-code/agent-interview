@@ -7,7 +7,7 @@ AI Agent 岗位模拟面试系统 —— 基于 Claude Code Skill + MCP Server +
 - **简历解析**：读取候选人简历（PDF/MD/TXT），分析技术背景和目标岗位
 - **多轮面试**：覆盖 LLM、Agent、RAG、记忆系统、多智能体、RLHF、VLM、工程实践等方向
 - **自适应难度**：根据候选人回答质量动态调整问题深度
-- **RAG 知识库**：基于 hello-agents（16章系统教程）和 Photo-agents（自主进化 Agent 框架）构建
+- **RAG 知识库**：基于 hello-agents（16章系统教程）、Agent-Learning-Hub（学习路线图 + 90+ 外部资源）构建
 - **评估报告**：生成包含知识评分、学习方向、改进建议和简历修改建议的完整报告
 
 ## 架构
@@ -55,7 +55,10 @@ pip install -r interview_rag_server/requirements.txt
 ```bash
 # 克隆知识源项目（构建完成后可删除）
 git clone https://github.com/datawhalechina/hello-agents.git
-git clone https://github.com/jmerelnyc/Photo-agents.git
+git clone https://github.com/datawhalechina/Agent-Learning-Hub.git
+
+# 抓取 Agent-Learning-Hub 中引用的外部资源（官方文档、论文、开源项目 README）
+python -m interview_rag_server.knowledge_base.fetch_web_sources
 
 # 构建 FAISS 索引
 python -m interview_rag_server.knowledge_base.build_index
@@ -108,14 +111,16 @@ python -m interview_rag_server.knowledge_base.build_index
 | 主题 | 来源 |
 |------|------|
 | LLM 基础 | hello-agents Ch.3, Extra01 |
-| Agent 架构 | hello-agents Ch.1/4/6/7, Photo-agents core/ |
-| RAG 技术 | hello-agents Ch.8, Photo-agents skills/ |
-| 记忆系统 | hello-agents Ch.8, Photo-agents resources/ |
-| 多智能体 | hello-agents Ch.15 |
+| Agent 架构 | hello-agents Ch.1/4/6/7, Agent-Learning-Hub Stage 0-1, Anthropic/OpenAI 官方指南 |
+| RAG 技术 | hello-agents Ch.8, Agent-Learning-Hub Stage 2, GPT Researcher/RAGFlow 等项目 |
+| 记忆系统 | hello-agents Ch.8, Agent-Learning-Hub Stage 2, mem0/Letta 等项目 |
+| 多智能体 | hello-agents Ch.15, Agent-Learning-Hub Stage 4, A2A/ACP 协议文档 |
 | RLHF/对齐 | hello-agents Ch.11 |
-| VLM | hello-agents Extra01, Photo-agents vision |
-| 评估方法 | hello-agents Ch.12 |
-| 工程实践 | hello-agents Ch.5/9/10, Photo-agents 全项目 |
+| VLM | hello-agents Extra01, Agent-Learning-Hub Stage 6 |
+| 评估方法 | hello-agents Ch.12, Agent-Learning-Hub Stage 7, AgentBench/SWE-bench 论文 |
+| 工程实践 | hello-agents Ch.9/10, Agent-Learning-Hub Stage 3/5/8, Claude Code Docs, learn-claude-code |
+| Agent Harness | Agent-Learning-Hub Stage 3, Dive into Claude Code 论文, AI Harness Engineering 论文 |
+| Skills/协议 | Agent-Learning-Hub Stage 5, MCP/A2A/ACP 协议文档 |
 
 ## MCP Server Tools
 
@@ -164,6 +169,7 @@ pytest tests/ -v
 - **向量存储**: FAISS (CPU) — 零基础设施，单文件持久化，<100K 向量高效
 - **MCP 框架**: FastMCP — 官方 Python MCP SDK
 - **分块策略**: 512 token / 64 overlap，保留 markdown 标题上下文
+- **知识源**: hello-agents 本地教程 + Agent-Learning-Hub 外部资源（自动抓取 90+ 链接）
 
 ## License
 

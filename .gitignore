@@ -2,3 +2,4 @@ interview_rag_server/data/faiss_index.bin
 interview_rag_server/data/metadata.json
 __pycache__/
 docs/superpowers/
+interview_rag_server/data/web_sources/resources_anthropic_com__hubfs_*

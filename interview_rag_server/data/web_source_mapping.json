@@ -1,0 +1,548 @@
+{
+  "sources": [
+    {
+      "url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "title": "Anthropic: Building effective agents",
+      "topic": "agent",
+      "source_type": "blog",
+      "section": "Stage 0: Understand What An Agent Is",
+      "file": "web_sources/www_anthropic_com__engineering_building-effective-agents__560cdb7361.md"
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/function-calling",
+      "title": "Gemini API Function Calling",
+      "topic": "agent",
+      "source_type": "blog",
+      "section": "Stage 1: Build A Minimal Agent Loop",
+      "file": "web_sources/ai_google_dev__gemini-api_docs_function-calling__8437d0a96b.md"
+    },
+    {
+      "url": "https://docs.llamaindex.ai/en/stable/use_cases/agents/",
+      "title": "LlamaIndex Agents",
+      "topic": "rag",
+      "source_type": "docs",
+      "section": "Stage 2: Learn Tool Use, RAG, And Memory",
+      "file": "web_sources/docs_llamaindex_ai__en_stable_use_cases_agents__0abad4a3bc.md"
+    },
+    {
+      "url": "https://docs.langchain.com/",
+      "title": "LangChain Docs",
+      "topic": "rag",
+      "source_type": "docs",
+      "section": "Stage 2: Learn Tool Use, RAG, And Memory",
+      "file": "web_sources/docs_langchain_com____9f4010a0f0.md"
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/code-execution",
+      "title": "Gemini API Code Execution",
+      "topic": "rag",
+      "source_type": "blog",
+      "section": "Stage 2: Learn Tool Use, RAG, And Memory",
+      "file": "web_sources/ai_google_dev__gemini-api_docs_code-execution__61a8afb437.md"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/",
+      "title": "Model Context Protocol",
+      "topic": "engineering",
+      "source_type": "docs",
+      "section": "Stage 2: Learn Tool Use, RAG, And Memory",
+      "file": "web_sources/modelcontextprotocol_io____473e0b52c6.md"
+    },
+    {
+      "url": "https://github.com/assafelovic/gpt-researcher",
+      "title": "GPT Researcher",
+      "topic": "rag",
+      "source_type": "github",
+      "section": "Stage 2: Learn Tool Use, RAG, And Memory",
+      "file": "web_sources/github_com__assafelovic_gpt-researcher__957bed828e.md"
+    },
+    {
+      "url": "https://github.com/langchain-ai/open_deep_research",
+      "title": "Open Deep Research",
+      "topic": "rag",
+      "source_type": "github",
+      "section": "Stage 2: Learn Tool Use, RAG, And Memory",
+      "file": "web_sources/github_com__langchain-ai_open_deep_research__280b22a646.md"
+    },
+    {
+      "url": "https://github.com/stanford-oval/storm",
+      "title": "STORM",
+      "topic": "rag",
+      "source_type": "github",
+      "section": "Stage 2: Learn Tool Use, RAG, And Memory",
+      "file": "web_sources/github_com__stanford-oval_storm__d6ba41f734.md"
+    },
+    {
+      "url": "https://github.com/khoj-ai/khoj",
+      "title": "Khoj",
+      "topic": "rag",
+      "source_type": "github",
+      "section": "Stage 2: Learn Tool Use, RAG, And Memory",
+      "file": "web_sources/github_com__khoj-ai_khoj__e25bfaf89a.md"
+    },
+    {
+      "url": "https://github.com/Mintplex-Labs/anything-llm",
+      "title": "AnythingLLM",
+      "topic": "rag",
+      "source_type": "github",
+      "section": "Stage 2: Learn Tool Use, RAG, And Memory",
+      "file": "web_sources/github_com__Mintplex-Labs_anything-llm__890b45b559.md"
+    },
+    {
+      "url": "https://github.com/infiniflow/ragflow",
+      "title": "RAGFlow",
+      "topic": "rag",
+      "source_type": "github",
+      "section": "Stage 2: Learn Tool Use, RAG, And Memory",
+      "file": "web_sources/github_com__infiniflow_ragflow__d7078bd140.md"
+    },
+    {
+      "url": "https://github.com/mem0ai/mem0",
+      "title": "mem0",
+      "topic": "memory",
+      "source_type": "github",
+      "section": "Stage 2: Learn Tool Use, RAG, And Memory",
+      "file": "web_sources/github_com__mem0ai_mem0__e32ee1ba28.md"
+    },
+    {
+      "url": "https://github.com/letta-ai/letta",
+      "title": "Letta",
+      "topic": "memory",
+      "source_type": "github",
+      "section": "Stage 2: Learn Tool Use, RAG, And Memory",
+      "file": "web_sources/github_com__letta-ai_letta__40edb6a7d9.md"
+    },
+    {
+      "url": "https://code.claude.com/docs/en/overview",
+      "title": "Claude Code Docs",
+      "topic": "engineering",
+      "source_type": "docs",
+      "section": "Stage 3: Study One Modern Agent Harness",
+      "file": "web_sources/code_claude_com__docs_en_overview__0e6ee67e51.md"
+    },
+    {
+      "url": "https://github.com/shareAI-lab/learn-claude-code",
+      "title": "learn-claude-code",
+      "topic": "engineering",
+      "source_type": "github",
+      "section": "Stage 3: Study One Modern Agent Harness",
+      "file": "web_sources/github_com__shareAI-lab_learn-claude-code__a09f21e37d.md"
+    },
+    {
+      "url": "https://github.com/shareAI-lab/claw0",
+      "title": "claw0",
+      "topic": "engineering",
+      "source_type": "github",
+      "section": "Stage 3: Study One Modern Agent Harness",
+      "file": "web_sources/github_com__shareAI-lab_claw0__75216c0a76.md"
+    },
+    {
+      "url": "https://github.com/datawhalechina/hello-agents",
+      "title": "hello-agents",
+      "topic": "engineering",
+      "source_type": "github",
+      "section": "Stage 3: Study One Modern Agent Harness",
+      "file": "web_sources/github_com__datawhalechina_hello-agents__150ed4f8b5.md"
+    },
+    {
+      "url": "https://github.com/openclaw/openclaw",
+      "title": "OpenClaw",
+      "topic": "engineering",
+      "source_type": "github",
+      "section": "Stage 3: Study One Modern Agent Harness",
+      "file": "web_sources/github_com__openclaw_openclaw__0bd21c2cf1.md"
+    },
+    {
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "title": "Hermes Agent",
+      "topic": "engineering",
+      "source_type": "github",
+      "section": "Stage 3: Study One Modern Agent Harness",
+      "file": "web_sources/github_com__NousResearch_hermes-agent__978e35c607.md"
+    },
+    {
+      "url": "https://github.com/ttguy0707/CyberClaw",
+      "title": "CyberClaw",
+      "topic": "engineering",
+      "source_type": "github",
+      "section": "Stage 3: Study One Modern Agent Harness",
+      "file": "web_sources/github_com__ttguy0707_CyberClaw__22a9ec15a4.md"
+    },
+    {
+      "url": "https://langchain-ai.github.io/langgraph/",
+      "title": "LangGraph",
+      "topic": "engineering",
+      "source_type": "blog",
+      "section": "Stage 3: Study One Modern Agent Harness",
+      "file": "web_sources/langchain-ai_github_io__langgraph__68b259fc66.md"
+    },
+    {
+      "url": "https://code.claude.com/docs/en/sub-agents",
+      "title": "Claude Code Subagents",
+      "topic": "engineering",
+      "source_type": "docs",
+      "section": "Stage 4: Multi-Agent Is Coordination, Not Magic",
+      "file": "web_sources/code_claude_com__docs_en_sub-agents__406beac7a6.md"
+    },
+    {
+      "url": "https://code.claude.com/docs/en/hooks",
+      "title": "Claude Code Hooks",
+      "topic": "engineering",
+      "source_type": "docs",
+      "section": "Stage 4: Multi-Agent Is Coordination, Not Magic",
+      "file": "web_sources/code_claude_com__docs_en_hooks__e49887dd7b.md"
+    },
+    {
+      "url": "https://google.github.io/adk-docs/",
+      "title": "Google Agent Development Kit",
+      "topic": "engineering",
+      "source_type": "docs",
+      "section": "Stage 4: Multi-Agent Is Coordination, Not Magic",
+      "file": "web_sources/google_github_io__adk-docs__3007762c40.md"
+    },
+    {
+      "url": "https://agentclientprotocol.com/",
+      "title": "Agent Client Protocol",
+      "topic": "engineering",
+      "source_type": "docs",
+      "section": "Stage 4: Multi-Agent Is Coordination, Not Magic",
+      "file": "web_sources/agentclientprotocol_com____2b3e561dc2.md"
+    },
+    {
+      "url": "https://code.claude.com/docs/en/skills",
+      "title": "Claude Code Skills",
+      "topic": "engineering",
+      "source_type": "docs",
+      "section": "Stage 5: Learn Skills, Protocols, And Capability Packaging",
+      "file": "web_sources/code_claude_com__docs_en_skills__f599cc5ec2.md"
+    },
+    {
+      "url": "https://code.claude.com/docs/en/agent-sdk/skills",
+      "title": "Claude Code Agent SDK Skills",
+      "topic": "engineering",
+      "source_type": "docs",
+      "section": "Stage 5: Learn Skills, Protocols, And Capability Packaging",
+      "file": "web_sources/code_claude_com__docs_en_agent-sdk_skills__3c392545f9.md"
+    },
+    {
+      "url": "https://github.com/openclaw/openclaw/blob/main/docs/tools/skills.md",
+      "title": "OpenClaw Skills",
+      "topic": "engineering",
+      "source_type": "github",
+      "section": "Stage 5: Learn Skills, Protocols, And Capability Packaging",
+      "file": "web_sources/github_com__openclaw_openclaw_blob_main_docs_tools_skills.md__4a2dbd7e2c.md"
+    },
+    {
+      "url": "https://github.com/browser-use/browser-use",
+      "title": "browser-use",
+      "topic": "agent",
+      "source_type": "github",
+      "section": "Stage 6: Browser And Computer-Use Agents",
+      "file": "web_sources/github_com__browser-use_browser-use__2f48be63fe.md"
+    },
+    {
+      "url": "https://arxiv.org/abs/2307.13854",
+      "title": "WebArena",
+      "topic": "agent",
+      "source_type": "paper",
+      "section": "Stage 6: Browser And Computer-Use Agents",
+      "file": "web_sources/arxiv_org__abs_2307.13854__c6dd7b341a.md"
+    },
+    {
+      "url": "https://arxiv.org/abs/2401.13649",
+      "title": "VisualWebArena",
+      "topic": "agent",
+      "source_type": "paper",
+      "section": "Stage 6: Browser And Computer-Use Agents",
+      "file": "web_sources/arxiv_org__abs_2401.13649__35a3f33d70.md"
+    },
+    {
+      "url": "https://docs.smith.langchain.com/",
+      "title": "LangSmith",
+      "topic": "evaluation",
+      "source_type": "docs",
+      "section": "Stage 7: Evaluation, Observability, And Safety",
+      "file": "web_sources/docs_smith_langchain_com____4d4dcc1f55.md"
+    },
+    {
+      "url": "https://arxiv.org/abs/2308.03688",
+      "title": "AgentBench",
+      "topic": "evaluation",
+      "source_type": "paper",
+      "section": "Stage 7: Evaluation, Observability, And Safety",
+      "file": "web_sources/arxiv_org__abs_2308.03688__a46f1651f6.md"
+    },
+    {
+      "url": "https://arxiv.org/abs/2310.06770",
+      "title": "SWE-bench",
+      "topic": "evaluation",
+      "source_type": "paper",
+      "section": "Stage 7: Evaluation, Observability, And Safety",
+      "file": "web_sources/arxiv_org__abs_2310.06770__95cba86086.md"
+    },
+    {
+      "url": "https://docs.claude.com/en/docs/claude-code/github-actions",
+      "title": "Claude Code GitHub Actions",
+      "topic": "engineering",
+      "source_type": "docs",
+      "section": "Official Guides And Blogs",
+      "file": "web_sources/docs_claude_com__en_docs_claude-code_github-actions__34a061680b.md"
+    },
+    {
+      "url": "https://resources.anthropic.com/hubfs/Claude%20Code%20Advanced%20Patterns_%20Subagents%2C%20MCP%2C%20and%20Scaling%20to%20Real%20Codebases.pdf",
+      "title": "Claude Code Advanced Patterns",
+      "topic": "engineering",
+      "source_type": "blog",
+      "section": "Official Guides And Blogs",
+      "file": "web_sources/resources_anthropic_com__hubfs_Claude%20Code%20Advanced%20Patterns_%20Subagents%2C%20__bb5da5c04a.md"
+    },
+    {
+      "url": "https://github.com/openai/codex",
+      "title": "OpenAI Codex",
+      "topic": "agent",
+      "source_type": "github",
+      "section": "Project Map",
+      "file": "web_sources/github_com__openai_codex__1a57528ba5.md"
+    },
+    {
+      "url": "https://github.com/opencode-ai/opencode",
+      "title": "OpenCode",
+      "topic": "agent",
+      "source_type": "github",
+      "section": "Project Map",
+      "file": "web_sources/github_com__opencode-ai_opencode__f04b49221f.md"
+    },
+    {
+      "url": "https://github.com/All-Hands-AI/OpenHands",
+      "title": "OpenHands",
+      "topic": "agent",
+      "source_type": "github",
+      "section": "Project Map",
+      "file": "web_sources/github_com__All-Hands-AI_OpenHands__ea01ff6d3a.md"
+    },
+    {
+      "url": "https://github.com/SWE-agent/SWE-agent",
+      "title": "SWE-agent",
+      "topic": "agent",
+      "source_type": "github",
+      "section": "Project Map",
+      "file": "web_sources/github_com__SWE-agent_SWE-agent__3962b1c7f3.md"
+    },
+    {
+      "url": "https://github.com/earendil-works/pi",
+      "title": "pi",
+      "topic": "agent",
+      "source_type": "github",
+      "section": "Project Map",
+      "file": "web_sources/github_com__earendil-works_pi__d37649da10.md"
+    },
+    {
+      "url": "https://docs.llamaindex.ai/",
+      "title": "LlamaIndex",
+      "topic": "rag",
+      "source_type": "docs",
+      "section": "Project Map",
+      "file": "web_sources/docs_llamaindex_ai____f89c5ff762.md"
+    },
+    {
+      "url": "https://github.com/NirDiamant/GenAI_Agents",
+      "title": "GenAI_Agents",
+      "topic": "agent",
+      "source_type": "github",
+      "section": "Project Map",
+      "file": "web_sources/github_com__NirDiamant_GenAI_Agents__e34a67838d.md"
+    },
+    {
+      "url": "https://github.com/huggingface/smolagents",
+      "title": "smolagents",
+      "topic": "agent",
+      "source_type": "github",
+      "section": "Project Map",
+      "file": "web_sources/github_com__huggingface_smolagents__f4eefa6ae3.md"
+    },
+    {
+      "url": "https://github.com/NirDiamant/agents-towards-production",
+      "title": "agents-towards-production",
+      "topic": "agent",
+      "source_type": "github",
+      "section": "Project Map",
+      "file": "web_sources/github_com__NirDiamant_agents-towards-production__6e0c4d897e.md"
+    },
+    {
+      "url": "https://github.com/bytedance/UI-TARS-desktop",
+      "title": "UI-TARS-desktop",
+      "topic": "agent",
+      "source_type": "github",
+      "section": "Project Map",
+      "file": "web_sources/github_com__bytedance_UI-TARS-desktop__ce85014ef2.md"
+    },
+    {
+      "url": "https://arxiv.org/abs/2602.08004",
+      "title": "Agent Skills analysis",
+      "topic": "engineering",
+      "source_type": "paper",
+      "section": "Skills, Protocols, And Tooling",
+      "file": "web_sources/arxiv_org__abs_2602.08004__12db4cc2db.md"
+    },
+    {
+      "url": "https://github.com/QwenLM/Qwen-Agent",
+      "title": "Qwen-Agent",
+      "topic": "agent",
+      "source_type": "github",
+      "section": "Modern Agent Systems",
+      "file": "web_sources/github_com__QwenLM_Qwen-Agent__3b76702440.md"
+    },
+    {
+      "url": "https://pydantic.dev/docs/ai/core-concepts/agent/",
+      "title": "Pydantic AI",
+      "topic": "engineering",
+      "source_type": "docs",
+      "section": "Modern Agent Systems",
+      "file": "web_sources/pydantic_dev__docs_ai_core-concepts_agent__fb7fc64182.md"
+    },
+    {
+      "url": "https://docs.crewai.com/",
+      "title": "CrewAI",
+      "topic": "multi-agent",
+      "source_type": "docs",
+      "section": "Legacy Or Optional Frameworks",
+      "file": "web_sources/docs_crewai_com____12ed56373b.md"
+    },
+    {
+      "url": "https://microsoft.github.io/autogen/",
+      "title": "AutoGen",
+      "topic": "multi-agent",
+      "source_type": "blog",
+      "section": "Legacy Or Optional Frameworks",
+      "file": "web_sources/microsoft_github_io__autogen__90226536c6.md"
+    },
+    {
+      "url": "https://arxiv.org/abs/2210.03629",
+      "title": "ReAct",
+      "topic": "agent",
+      "source_type": "paper",
+      "section": "Papers",
+      "file": "web_sources/arxiv_org__abs_2210.03629__fb94233ba9.md"
+    },
+    {
+      "url": "https://arxiv.org/abs/2302.04761",
+      "title": "Toolformer",
+      "topic": "agent",
+      "source_type": "paper",
+      "section": "Papers",
+      "file": "web_sources/arxiv_org__abs_2302.04761__617e28ba4f.md"
+    },
+    {
+      "url": "https://arxiv.org/abs/2304.03442",
+      "title": "Generative Agents",
+      "topic": "memory",
+      "source_type": "paper",
+      "section": "Papers",
+      "file": "web_sources/arxiv_org__abs_2304.03442__fefbb121e5.md"
+    },
+    {
+      "url": "https://arxiv.org/abs/2305.16291",
+      "title": "Voyager",
+      "topic": "agent",
+      "source_type": "paper",
+      "section": "Papers",
+      "file": "web_sources/arxiv_org__abs_2305.16291__7faa5c7e07.md"
+    },
+    {
+      "url": "https://arxiv.org/abs/2405.15793",
+      "title": "SWE-agent",
+      "topic": "engineering",
+      "source_type": "paper",
+      "section": "Papers",
+      "file": "web_sources/arxiv_org__abs_2405.15793__faa2d1dbd6.md"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.14228",
+      "title": "Dive into Claude Code",
+      "topic": "engineering",
+      "source_type": "paper",
+      "section": "Papers",
+      "file": "web_sources/arxiv_org__abs_2604.14228__55ca0498d2.md"
+    },
+    {
+      "url": "https://github.com/langchain-ai/langgraph",
+      "title": "langchain-ai/langgraph",
+      "topic": "agent",
+      "source_type": "github",
+      "section": "GitHub Repositories",
+      "file": "web_sources/github_com__langchain-ai_langgraph__78e343869d.md"
+    },
+    {
+      "url": "https://github.com/openai/openai-agents-python",
+      "title": "openai/openai-agents-python",
+      "topic": "agent",
+      "source_type": "github",
+      "section": "GitHub Repositories",
+      "file": "web_sources/github_com__openai_openai-agents-python__e0a3b20779.md"
+    },
+    {
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "title": "microsoft/ai-agents-for-beginners",
+      "topic": "agent",
+      "source_type": "github",
+      "section": "GitHub Repositories",
+      "file": "web_sources/github_com__microsoft_ai-agents-for-beginners__94985b3bfb.md"
+    },
+    {
+      "url": "https://github.com/jjyaoao/HelloAgents",
+      "title": "jjyaoao/HelloAgents",
+      "topic": "agent",
+      "source_type": "github",
+      "section": "GitHub Repositories",
+      "file": "web_sources/github_com__jjyaoao_HelloAgents__1e2ad1e1bc.md"
+    },
+    {
+      "url": "https://lilianweng.github.io/posts/2023-06-23-agent/",
+      "title": "Lilian Weng: LLM Powered Autonomous Agents",
+      "topic": "agent",
+      "source_type": "blog",
+      "section": "Thoughtful Blogs",
+      "file": "web_sources/lilianweng_github_io__posts_2023-06-23-agent__31d52fb4a4.md"
+    },
+    {
+      "url": "https://simonwillison.net/tags/llms/",
+      "title": "Simon Willison: AI/LLM writing",
+      "topic": "agent",
+      "source_type": "blog",
+      "section": "Thoughtful Blogs",
+      "file": "web_sources/simonwillison_net__tags_llms__904d767a4c.md"
+    },
+    {
+      "url": "https://blog.langchain.com/",
+      "title": "LangChain Blog",
+      "topic": "engineering",
+      "source_type": "blog",
+      "section": "Thoughtful Blogs",
+      "file": "web_sources/blog_langchain_com____0464a858b0.md"
+    },
+    {
+      "url": "https://developers.googleblog.com/agent-development-kit-easy-to-build-multi-agent-applications/",
+      "title": "Google Developers Blog: ADK",
+      "topic": "agent",
+      "source_type": "blog",
+      "section": "Thoughtful Blogs",
+      "file": "web_sources/developers_googleblog_com__agent-development-kit-easy-to-build-multi-agent-applications__acbb820208.md"
+    },
+    {
+      "url": "https://code.claude.com/docs/en/tutorials",
+      "title": "Claude Code Common Workflows",
+      "topic": "engineering",
+      "source_type": "docs",
+      "section": "Claude Code Study Path",
+      "file": "web_sources/code_claude_com__docs_en_tutorials__d637080bed.md"
+    },
+    {
+      "url": "https://claudecoding.dev/",
+      "title": "Claude Code 源码解析",
+      "topic": "engineering",
+      "source_type": "blog",
+      "section": "Claude Code Study Path",
+      "file": "web_sources/claudecoding_dev____45f506d837.md"
+    }
+  ]
+}
