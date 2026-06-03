@@ -1,3 +1,6 @@
 __pycache__/
 docs/superpowers/
 interview_rag_server/data/web_sources/resources_anthropic_com__hubfs_*
+dist/
+build/
+*.egg-info/

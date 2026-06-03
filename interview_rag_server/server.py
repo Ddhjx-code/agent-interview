@@ -114,5 +114,9 @@ def get_learning_path(weak_topics: str) -> str:
     return json.dumps(result, ensure_ascii=False, indent=2)
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+
+if __name__ == "__main__":
+    main()
